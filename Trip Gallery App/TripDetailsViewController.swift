@@ -27,23 +27,23 @@ class TripDetailsViewController: UITableViewController {
     
     @IBOutlet weak var tripLocation: UITextField!
     @IBAction func saveTripInfo(_ sender: UIButton) {
-        trip!.tripDate = Utilities.dateFormatter.date(from: tripDate.text!)!
+        //trip!.tripDate = Utilities.dateFormatter.date(from: tripDate.text!)!
         if trip != nil
         {
-            tripDate.text = Utilities.dateFormatter.date(from: tripDate.text!)!
-            tripDuration.text = Int(tripDuration.text!)!
+            //tripDate.text = Utilities.dateFormatter.date(from: tripDate.text!)!
+            //tripDuration.text = Int(tripDuration.text!)!
             tripLocation.text = tripLocation.text!
         }
     }
     override func viewWillAppear(_ animated: Bool)
     {
         if trip != nil {
-            tripDate.text = Utilities.dateFormatter.string(for: trip!.tripDate)
+            //tripDate.text = Utilities.dateFormatter.string(for: trip!.tripDate)
             tripDuration.text = "\(trip!.tripDuration)"
             tripLocation.text = trip!.tripDestination
         }
     }
-    
+
     
     
     

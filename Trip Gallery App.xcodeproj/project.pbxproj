@@ -15,6 +15,8 @@
 		82B1929F20C902F500165AA2 /* TripsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B1929E20C902F500165AA2 /* TripsTableViewController.swift */; };
 		82B192A320C9044700165AA2 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B192A220C9044600165AA2 /* Trip.swift */; };
 		82B192A520CA541600165AA2 /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B192A420CA541600165AA2 /* TripDetailsViewController.swift */; };
+		82C2B89620CB655500397D3F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C2B89520CB655500397D3F /* MapKit.framework */; };
+		82C2B89820CB6A9900397D3F /* TripsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C2B89720CB6A9900397D3F /* TripsMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		82B1929E20C902F500165AA2 /* TripsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewController.swift; sourceTree = "<group>"; };
 		82B192A220C9044600165AA2 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		82B192A420CA541600165AA2 /* TripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
+		82C2B89520CB655500397D3F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		82C2B89720CB6A9900397D3F /* TripsMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C2B89620CB655500397D3F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,7 @@
 			children = (
 				82B1928820C8FDA100165AA2 /* Trip Gallery App */,
 				82B1928720C8FDA100165AA2 /* Products */,
+				82C2B89420CB655500397D3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,8 +75,17 @@
 				82B1929820C8FDA200165AA2 /* Info.plist */,
 				82B1929020C8FDA200165AA2 /* Trip_Gallery_App.xcdatamodeld */,
 				82B192A420CA541600165AA2 /* TripDetailsViewController.swift */,
+				82C2B89720CB6A9900397D3F /* TripsMapViewController.swift */,
 			);
 			path = "Trip Gallery App";
+			sourceTree = "<group>";
+		};
+		82C2B89420CB655500397D3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82C2B89520CB655500397D3F /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +120,11 @@
 				TargetAttributes = {
 					82B1928520C8FDA100165AA2 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -144,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C2B89820CB6A9900397D3F /* TripsMapViewController.swift in Sources */,
 				82B192A320C9044700165AA2 /* Trip.swift in Sources */,
 				82B192A520CA541600165AA2 /* TripDetailsViewController.swift in Sources */,
 				82B1929F20C902F500165AA2 /* TripsTableViewController.swift in Sources */,
